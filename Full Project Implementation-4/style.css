@@ -1,1 +1,55 @@
+/* --- Global --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
 
+h2 { margin-top: 0; }
+
+/* --- Header & Nav --- */
+header {
+  background: linear-gradient(90deg,#0a6570,#0a9396);
+  color: #fff;
+  padding: 25px 15px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+nav button {
+  margin: 6px;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0a6570;
+}
+
+nav button:hover { background: #e1f5f6; }
+
+/* --- Sections --- */
+.section { display: none; }
+.section.active { display: block; }
+
+input, select, button { margin: 6px 4px; padding: 8px; }
+
+/* --- Product cards --- */
+.product {
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.product button {
+  padding: 6px 12px;
+  background: #0a9396;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover { background: #067c80; }
