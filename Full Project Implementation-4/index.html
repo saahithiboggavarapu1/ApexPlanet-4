@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task-4: Full Project (Apex Planet)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Task-4: Full Project (Apex Planet)</h1>
+    <nav>
+      <button onclick="showSection('portfolio')">Portfolio</button>
+      <button onclick="showSection('todo')">To-Do List</button>
+      <button onclick="showSection('product')">Product Page</button>
+    </nav>
+  </header>
 
+  <!-- Portfolio -->
+  <section id="portfolio" class="section active">
+    <h2>My Portfolio</h2>
+    <p>Hello, I'm <strong>Saahithi</strong>! Welcome to my web project.</p>
+    <h3>Projects</h3>
+    <ul>
+      <li>HematoVision</li>
+      <li>Drone Detection</li>
+      <li>This Combined Task-4 Website</li>
+    </ul>
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:Saahi04@gmail.com">Saahi04@gmail.com</a></p>
+  </section>
+
+  <!-- To-Do List -->
+  <section id="todo" class="section">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product Page -->
+  <section id="product" class="section">
+    <h2>Product Page</h2>
+
+    <input type="text" id="searchInput" placeholder="Search product…" onkeyup="searchProducts()">
+
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="All">All</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <select id="sortBy" onchange="sortProducts()">
+      <option value="none">Sort By</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <div id="products"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
